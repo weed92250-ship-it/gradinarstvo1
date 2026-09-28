@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gradinarstvo.netlify.app/sitemap.xml
