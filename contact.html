@@ -1,1 +1,54 @@
-<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Контакт | Градинарство</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><div class="wrap nav"><a class="brand" href="index.html">🌱 Градинарство</a><nav class="navlinks"><a href="guides.html">Ръководства</a><a href="calendar.html">Календар</a><a href="tools.html">Инструменти</a><a href="about.html">За сайта</a><a href="contact.html">Контакт</a></nav></div></header><main class="section"><div class="wrap article"><h1>Контакт</h1><p>Изпрати въпрос, корекция или идея за ново ръководство.</p><form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html"><input type="hidden" name="form-name" value="contact"><p hidden><input name="bot-field"></p><label>Име<input name="name" required></label><label>Имейл<input type="email" name="email" required></label><label>Съобщение<textarea name="message" rows="7" required></textarea></label><button class="btn" type="submit">Изпрати</button></form></div></main><footer class="site-footer"><div class="wrap"><strong>🌱 Градинарство</strong><br><span>Практични знания за домашната градина.</span><br><br><a href="privacy.html">Поверителност</a> · <a href="contact.html">Контакт</a> · © <span data-year></span></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Зеленчукова Градина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1><a href="index.html">🌱 Зеленчукова Градина</a></h1>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="guides.html">Ръководства</a></li>
+                    <li><a href="tools.html">Инструменти</a></li>
+                    <li><a href="calendar.html">Календар</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="article-content">
+            <h2>Свържете се с нас</h2>
+            <p>Имате въпроси, предложения или искате да споделите своя опит в градинарството? Пишете ни чрез формата по-долу или на нашия официален имейл.</p>
+            
+            <form action="thank-you.html" method="GET" style="margin-top: 20px;">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold;">Вашето име:</label>
+                    <input type="text" id="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Имейл адрес:</label>
+                    <input type="email" id="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold;">Съобщение:</label>
+                    <textarea id="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+                <button type="submit" class="btn">Изпрати съобщение</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Зеленчукова Градина - Всички права запазени.</p>
+            <p><a href="privacy.html">Политика за поверителност</a> | <a href="contact.html">Свържете се с нас</a></p>
+        </div>
+    </footer>
+</body>
+</html>

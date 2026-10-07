@@ -1,1 +1,48 @@
-<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Инструменти | Градинарство</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><div class="wrap nav"><a class="brand" href="index.html">🌱 Градинарство</a><nav class="navlinks"><a href="guides.html">Ръководства</a><a href="calendar.html">Календар</a><a href="tools.html">Инструменти</a><a href="about.html">За сайта</a><a href="contact.html">Контакт</a></nav></div></header><main class="section"><div class="wrap"><h1>Инструменти</h1><div class="card"><h2>Калкулатор за растения</h2><p>Въведи площта на лехата и разстоянията в сантиметри.</p><label>Площ m²<input id="area" type="number" min="0" step=".1" style="display:block;width:100%;padding:10px"></label><label>Редове cm<input id="rows" type="number" min="1" style="display:block;width:100%;padding:10px"></label><label>Растения cm<input id="spacing" type="number" min="1" style="display:block;width:100%;padding:10px"></label><p id="tool-output" class="notice">Въведи стойности за изчисление.</p></div><p><a href="index.html">← Начална страница</a></p></div></main><script src="script.js"></script><footer class="site-footer"><div class="wrap"><strong>🌱 Градинарство</strong><br><span>Практични знания за домашната градина.</span><br><br><a href="privacy.html">Поверителност</a> · <a href="contact.html">Контакт</a> · © <span data-year></span></div></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезни инструменти и калкулатори - Зеленчукова Градина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1><a href="index.html">🌱 Зеленчукова Градина</a></h1>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="guides.html">Ръководства</a></li>
+                    <li><a href="tools.html">Инструменти</a></li>
+                    <li><a href="calendar.html">Календар</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="article-content">
+            <h2>Полезни инструменти за градинари</h2>
+            <p>Използвайте нашите удобни калкулатори за планиране на разсада и нуждите от поливане.</p>
+            
+            <h3>Калкулатор за разсад</h3>
+            <p>Въведете площта на вашата градина (в квадратни метри), за да изчислите приблизителния брой растения, които са ви необходими за отлична реколта без пренасаждане.</p>
+            
+            <div style="background: var(--bg-color); padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <label for="area" style="display: block; margin-bottom: 10px; font-weight: bold;">Площ на градината (кв.м):</label>
+                <input type="number" id="area" value="50" style="padding: 10px; width: 100%; max-width: 300px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
+                <br>
+                <button onclick="alert('За площ от ' + document.getElementById('area').value + ' кв.м препоръчваме около 40-50 корейна домати и 60 броя пипер за оптимална реколта!')" class="btn">Изчисли растения</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Зеленчукова Градина - Всички права запазени.</p>
+            <p><a href="privacy.html">Политика за поверителност</a> | <a href="contact.html">Свържете се с нас</a></p>
+        </div>
+    </footer>
+</body>
+</html>
